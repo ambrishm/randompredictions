@@ -9,7 +9,7 @@ hooks:
   ApplicationStop:
     - location: scripts/deregister_from_elb.sh
     - location: scripts/stop_server
-      timeout: 300
+      timeout: 400
 
   BeforeInstall:
     - location: scripts/install_dependencies
