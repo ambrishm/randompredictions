@@ -7,7 +7,6 @@ files:
     destination: /etc/apache2/sites-available
 hooks:
   ApplicationStop:
-    - location: scripts/deregister_from_elb.sh
     - location: scripts/stop_server
       timeout: 300
 
@@ -20,4 +19,3 @@ hooks:
       timeout: 300
 
   ApplicationStart:
-    - location: scripts/register_with_elb.sh
