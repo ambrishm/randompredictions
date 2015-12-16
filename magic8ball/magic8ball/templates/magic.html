@@ -139,7 +139,7 @@
     {% block scripts %}
     {{super()}}
     <script type=text/javascript>
-      $SCRIPT_ROOT = 'http://magic-eight-ball-python-996710794.us-west-2.elb.amazonaws.com';
+      $SCRIPT_ROOT = 'http://mylb-1827005861.us-west-2.elb.amazonaws.com';
       $(function() {
         $(setInterval(function() {
             $.getJSON($SCRIPT_ROOT + '/_get_new_fortune', function(data) {
@@ -168,7 +168,7 @@
         previousState3 = "InService";
       });
 
-      $SCRIPT_ROOT = 'http://magic-eight-ball-python-996710794.us-west-2.elb.amazonaws.com';
+      $SCRIPT_ROOT = 'http://mylb-1827005861.us-west-2.elb.amazonaws.com';
       $(function() {
         $(setInterval(function() {
             $.getJSON($SCRIPT_ROOT + '/_get_lb_info', function(data) {
