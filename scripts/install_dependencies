@@ -3,5 +3,6 @@
 yum -q -y install apache2
 yum -q -y install libapache2-mod-wsgi
 yum -q -y install python-dev
-a2enmod wsgi
+LoadModule wsgi_module modules/mod_wsgi.so
+/etc/init.d/httpd restart
 
