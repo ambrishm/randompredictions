@@ -13,7 +13,7 @@ hooks:
 
   BeforeInstall:
     - location: scripts/install_dependencies
-	
+
   AfterInstall:
     - location: scripts/setup_virtualenv
     - location: scripts/start_server
