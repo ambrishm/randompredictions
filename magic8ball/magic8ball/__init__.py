@@ -10,7 +10,7 @@ Bootstrap(app)
 
 
 def get_title():
-  return 'Hello Trainers (made of carbon).'
+  return 'Hello World.'
 
 def get_fortune():
   responses = [
@@ -44,7 +44,7 @@ def get_lb_state():
       endpoint='elasticloadbalancing.us-west-2.amazonaws.com')
 
   elb_connection = boto.connect_elb(region=elb_region)
-  state = elb_connection.describe_instance_health('magic-eight-ball-python')
+  state = elb_connection.describe_instance_health('mylb')
   return_value = {}
   for instance in state:
     return_value[instance.instance_id] = instance.state
