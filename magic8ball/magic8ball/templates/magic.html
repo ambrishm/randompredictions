@@ -69,7 +69,7 @@
         <!-- Portfolio Item Heading -->
         <div class="row">
             <div class="col-lg-12">
-	        <h1 class="page-header"><span id="page-title">Hello World.</span> 
+	        <h1 class="page-header"><span id="page-title">hello world.</span> 
                     <small>from humble instance <mark><span id="header-div">{{instance_id}} </span></mark></small>
                 </h1>
             </div>
@@ -172,33 +172,33 @@
       $(function() {
         $(setInterval(function() {
             $.getJSON($SCRIPT_ROOT + '/_get_lb_info', function(data) {
-              if(data['i-86469870'] != undefined && data['i-86469870'] != previousState1) {
-                previousState1 = data['i-86469870'];
-                if(data['i-86469870'] == 'OutOfService') {
+              if(data['i-b483b370'] != undefined && data['i-b483b370'] != previousState1) {
+                previousState1 = data['i-b483b370'];
+                if(data['i-b483b370'] == 'OutOfService') {
                   $("#lb-state-1").css("background-color","LightPink");
                 } else {
                   $("#lb-state-1").css("background-color","LightGreen"); 
                 }
-                $("#lb-state-1").hide().html("<h1>i-86469870: " + data['i-86469870'] + "</h1>").fadeIn('slow');
+                $("#lb-state-1").hide().html("<h1>i-b483b370: " + data['i-b483b370'] + "</h1>").fadeIn('slow');
               }
-              if(data['i-2c30f921'] != undefined && data['i-2c30f921'] != previousState2) {
-                previousState2 = data['i-2c30f921'];
-                if(data['i-2c30f921'] == 'OutOfService') {
+              if(data['i-b583b371'] != undefined && data['i-b583b371'] != previousState2) {
+                previousState2 = data['i-b583b371'];
+                if(data['i-b583b371'] == 'OutOfService') {
                   $("#lb-state-2").css("background-color","LightPink");
                 } else {
                   $("#lb-state-2").css("background-color","LightGreen"); 
                 }
-                $("#lb-state-2").hide().html("<h1>i-2c30f921: " + data['i-2c30f921'] + "</h1>").fadeIn('slow');
+                $("#lb-state-2").hide().html("<h1>i-b583b371: " + data['i-b583b371'] + "</h1>").fadeIn('slow');
               }
-              if(data['i-914d2d59'] != undefined && data['i-914d2d59'] != previousState3) {
-                previousState3 = data['i-914d2d59'];
-                if(data['i-914d2d59'] == 'OutOfService') {
+              if(data['i-b683b372'] != undefined && data['i-b683b372'] != previousState3) {
+                previousState3 = data['i-b683b372'];
+                if(data['i-b683b372'] == 'OutOfService') {
                   $("#lb-state-3").css("background-color","LightPink");
                 }else {
                   $("#lb-state-3").css("background-color","LightGreen");
                 }
 
-                $("#lb-state-3").hide().html("<h1>i-914d2d59: " + data['i-914d2d59'] + "</h1>").fadeIn('slow');
+                $("#lb-state-3").hide().html("<h1>i-b683b372: " + data['i-b683b372'] + "</h1>").fadeIn('slow');
               }
             });
           }, 3000)
