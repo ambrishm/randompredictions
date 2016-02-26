@@ -44,7 +44,7 @@ def get_lb_state():
       endpoint='elasticloadbalancing.us-east-1.amazonaws.com')
 
   elb_connection = boto.connect_elb(region=elb_region)
-  state = elb_connection.describe_instance_health('magic-eight-ball-python')
+  state = elb_connection.describe_instance_health('RandomPredictions')
   return_value = {}
   for instance in state:
     return_value[instance.instance_id] = instance.state
